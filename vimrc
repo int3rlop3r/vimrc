@@ -40,9 +40,8 @@ Plugin 'scrooloose/nerdtree'
 " CTRL-P
 Plugin 'kien/ctrlp.vim'
 
-" AIRLINE - Awesome vim status bar
+"Airline - cool status bar!
 Plugin 'bling/vim-airline'
-
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 " All of your Plugins must be added before the 
@@ -75,34 +74,10 @@ filetype plugin indent on    " required
 " Remap leader key
 let mapleader = ','
 
-" NerdTree Stuff
+" NerdTree Settings 
 map <C-e> :NERDTreeToggle<CR>
 map <leader>e :NERDTreeFind<CR>
 
-" Airline Theme
-let laststatus=2
-"let g:airline_powerline_fonts = 1
-" let g:airline_theme = 'solarized'
-" Broken down into easily includeable segments
-" set statusline=%<%f\ " Filename
-" set statusline+=%w%h%m%r " Options
-" set statusline+=%{fugitive#statusline()} " Git Hotness
-" set statusline+=\ [%{&ff}/%Y] " Filetype
-" set statusline+=\ [%{getcwd()}] " Current dir
-" set statusline+=%=%-14.(%l,%c%V%)\ %p%% " Right aligned file nav info
-
-""""""""""""""""""""""""""""""
-" airline
-" """"""""""""""""""""""""""""""
-" let g:airline_theme             = 'powerlineish'
-" let g:airline_enable_branch     = 1
-" let g:airline_enable_syntastic  = 1
-
-" vim-powerline symbols
-"  let g:airline_left_sep          = '<'
-"  let g:airline_left_alt_sep      = '<<'
-"  let g:airline_right_sep         = '>'
-"  let g:airline_right_alt_sep     = '>>'
-"  let g:airline_branch_prefix     = 'BR'
-"  let g:airline_readonly_symbol   = '!!'
-"  let g:airline_linecolumn_prefix = 'LC'
+" Airline Settings 
+set laststatus=2
+let g:airline_theme = 'solarized'
