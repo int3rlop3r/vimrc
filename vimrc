@@ -1,4 +1,5 @@
-set nocompatible              " be iMproved, required filetype off                  " required
+set nocompatible              " be iMproved, required 
+filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -10,24 +11,6 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
-" DEFAULT PLUGINS THAT WANTED TO BE PART OF THE TEAM "
-""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" The following are examples of different formats supported.
-" Keep Plugin commands between vundle#begin/end.
-" plugin on GitHub repo
-" Plugin 'tpope/vim-fugitive'
-" plugin from http://vim-scripts.org/vim/scripts.html
-" Plugin 'L9'
-" Git plugin not hosted on GitHub
-" Plugin 'git://git.wincent.com/command-t.git'
-" git repos on your local machine (i.e. when working on your own plugin)
-" Plugin 'file:///home/gmarik/path/to/plugin'
-" The sparkup vim script is in a subdirectory of this repo called vim.
-" Pass the path to set the runtimepath properly.
-" Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-" Avoid a name conflict with L9
-" Plugin 'user/L9', {'name': 'newL9'}
-""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugins that have been installed
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -37,12 +20,17 @@ Plugin 'Lokaltog/vim-easymotion'
 " Nerd Tree - Browser code tree
 Plugin 'scrooloose/nerdtree'
 
-" CTRL-P
+" CTRL-P - Quick file search
 Plugin 'kien/ctrlp.vim'
 
 "Airline - cool status bar!
 Plugin 'bling/vim-airline'
 
+" Sparkup - faster html
+Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+
+" Fugitive - git wrapper
+Plugin 'tpope/vim-fugitive'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 " All of your Plugins must be added before the 
 " following line
@@ -81,3 +69,11 @@ map <leader>e :NERDTreeFind<CR>
 " Airline Settings 
 set laststatus=2
 let g:airline_theme = 'solarized'
+
+" Indentation settings
+set autoindent " Indent at the same level of the previous line
+set shiftwidth=4 " Use indents of 4 spaces
+set expandtab " Tabs are spaces, not tabs
+set tabstop=4 " An indentation every four columns
+set softtabstop=4 " Let backspace delete indent
+set nojoinspaces " Prevents inserting two spaces after punctuation on a join (J)
