@@ -23,14 +23,18 @@ Plugin 'scrooloose/nerdtree'
 " CTRL-P - Quick file search
 Plugin 'kien/ctrlp.vim'
 
-"Airline - cool status bar!
-Plugin 'bling/vim-airline'
+"Lightline - cool status bar!
+Plugin 'itchyny/lightline.vim'
 
 " Sparkup - faster html
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
 " Fugitive - git wrapper
 Plugin 'tpope/vim-fugitive'
+
+" Themes
+Plugin 'altercation/vim-colors-solarized'
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 " All of your Plugins must be added before the 
 " following line
@@ -51,24 +55,14 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""
-""""""""""""""""""""""""""""""""""""""""""""""""""""""
-""""""""""""""""""""""""""""""""""""""""""""""""""""""
-""""""""""""""""""""""""""""""""""""""""""""""""""""""
-""""""""""""""""""""""""""""""""""""""""""""""""""""""
-""""""""""""""""""""""""""""""""""""""""""""""""""""""
-""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""
+" ViM Settings                                      "
+"""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Xterm colours
+set t_Co=256
 
 " Remap leader key
 let mapleader = ','
-
-" NerdTree Settings 
-map <C-e> :NERDTreeToggle<CR>
-map <leader>e :NERDTreeFind<CR>
-
-" Airline Settings 
-set laststatus=2
-let g:airline_theme = 'solarized'
 
 " Indentation settings
 set autoindent " Indent at the same level of the previous line
@@ -77,3 +71,24 @@ set expandtab " Tabs are spaces, not tabs
 set tabstop=4 " An indentation every four columns
 set softtabstop=4 " Let backspace delete indent
 set nojoinspaces " Prevents inserting two spaces after punctuation on a join (J)
+
+" Display line numbers along the left side of the window
+set nu
+
+" Ignore case while searching
+set ignorecase
+"""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Plugin Settings                                   "
+"""""""""""""""""""""""""""""""""""""""""""""""""""""
+" NerdTree Settings 
+map <C-e> :NERDTreeToggle<CR>
+map <leader>e :NERDTreeFind<CR>
+
+" Airline Settings 
+set laststatus=2 " else status bar won't show up
+
+" Solarized theme Settings
+syntax enable
+set background=dark
+colorscheme solarized
+"""""""""""""""""""""""""""""""""""""""""""""""""""""
