@@ -35,6 +35,9 @@ Plugin 'tpope/vim-fugitive'
 " Themes
 Plugin 'altercation/vim-colors-solarized'
 
+" Nerdcommenter - quick comment/uncomment
+Plugin 'scrooloose/nerdcommenter'
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 " All of your Plugins must be added before the 
 " following line
@@ -84,7 +87,7 @@ set ignorecase
 map <C-e> :NERDTreeToggle<CR>
 map <leader>e :NERDTreeFind<CR>
 
-" Airline Settings 
+" Lightline Settings 
 set laststatus=2 " else status bar won't show up
 
 " Solarized theme Settings
