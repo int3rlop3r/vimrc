@@ -29,9 +29,6 @@ Plugin 'itchyny/lightline.vim'
 " Sparkup - faster html
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
-" Fugitive - git wrapper
-Plugin 'tpope/vim-fugitive'
-
 " Themes
 Plugin 'altercation/vim-colors-solarized'
 
