@@ -97,6 +97,15 @@ nnoremap <Leader>7 :7b<CR>
 nnoremap <Leader>8 :8b<CR>
 nnoremap <Leader>9 :9b<CR>
 nnoremap <Leader>0 :10b<CR>
+
+" Clip board settings
+if has('clipboard')
+    if has('unnamedplus') " When possible use + register for copy-paste
+        set clipboard=unnamed,unnamedplus
+    else " On mac and Windows, use * register for copy-paste
+        set clipboard=unnamed
+    endif
+endif
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugin Settings                                   "
 """""""""""""""""""""""""""""""""""""""""""""""""""""
