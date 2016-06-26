@@ -1,2 +1,1 @@
-COMING SOON
-------------
+My .vimrc file
