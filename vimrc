@@ -92,6 +92,12 @@ nnoremap <Leader>8 :8b<CR>
 nnoremap <Leader>9 :9b<CR>
 nnoremap <Leader>0 :10b<CR>
 
+" Easier tab switching
+" L  : switch to the right tab
+" H  : switch to the left tab
+noremap L gt                                                                                                                                                                                                
+noremap H gT
+
 " Clip board settings
 if has('clipboard')
     if has('unnamedplus') " When possible use + register for copy-paste
