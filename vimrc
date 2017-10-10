@@ -29,9 +29,6 @@ Plugin 'itchyny/lightline.vim'
 " Sparkup - faster html
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
-" Themes
-Plugin 'altercation/vim-colors-solarized'
-
 " Nerdcommenter - quick comment/uncomment
 Plugin 'scrooloose/nerdcommenter'
 
@@ -71,9 +68,6 @@ set expandtab " Tabs are spaces, not tabs
 set tabstop=4 " An indentation every four columns
 set softtabstop=4 " Let backspace delete indent
 set nojoinspaces " Prevents inserting two spaces after punctuation on a join (J)
-
-" Display line numbers along the left side of the window
-set nu
 
 " Ignore case while searching
 set ignorecase
@@ -119,5 +113,4 @@ set laststatus=2 " else status bar won't show up
 " Solarized theme Settings
 syntax enable
 set background=dark
-colorscheme solarized
 """""""""""""""""""""""""""""""""""""""""""""""""""""
