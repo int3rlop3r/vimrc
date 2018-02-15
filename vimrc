@@ -95,7 +95,7 @@ nnoremap <Leader>0 :10b<CR>
 " Easier tab switching
 " L  : switch to the right tab
 " H  : switch to the left tab
-noremap L gt                                                                                                                                                                                                
+noremap L gt
 noremap H gT
 
 " Clip board settings
