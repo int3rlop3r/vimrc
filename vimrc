@@ -20,8 +20,8 @@ Plugin 'Lokaltog/vim-easymotion'
 " Nerd Tree - Browser code tree
 Plugin 'scrooloose/nerdtree'
 
-" CTRL-P - Quick file search
-Plugin 'kien/ctrlp.vim'
+" VIM Go - because we all need a little golang
+Plugin 'fatih/vim-go'
 
 "Lightline - cool status bar!
 Plugin 'itchyny/lightline.vim'
