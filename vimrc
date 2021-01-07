@@ -120,3 +120,10 @@ set laststatus=2 " else status bar won't show up
 syntax enable
 set background=dark
 """""""""""""""""""""""""""""""""""""""""""""""""""""
+" Go Plugin settings                                "
+"""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:go_fmt_autosave = 1
+let g:go_imports_autosave = 1
+let g:go_version_warning = 0
+noremap <Leader>r :GoRename<CR>
+noremap <Leader>d :GoDoc<CR>
