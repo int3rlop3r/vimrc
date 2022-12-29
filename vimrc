@@ -14,6 +14,9 @@ Plugin 'gmarik/Vundle.vim'
 " Plugins that have been installed
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 
+" drawit - For drawing stuff in vim
+Plugin 'vim-scripts/DrawIt'
+
 " Easy Motion - For easy navigation
 Plugin 'Lokaltog/vim-easymotion'
 
@@ -125,5 +128,7 @@ set background=dark
 let g:go_fmt_autosave = 1
 let g:go_imports_autosave = 1
 let g:go_version_warning = 0
+set completeopt-=preview
 noremap <Leader>r :GoRename<CR>
 noremap <Leader>d :GoDoc<CR>
+autocmd FileType go nmap <silent> <Leader>d <Plug>(go-def-tab)
